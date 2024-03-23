@@ -7,18 +7,38 @@
     }
     
     #top-sticky{
-        height: 8vh;
+        height: 10vh;
         width: 100%;
         justify-content: space-between;
         font-size:1.9vw;
-        padding: 2vh;
+        padding: 1vh;
+        flex-direction: column;
     }
     
     #content1{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
         height: 5.6vh;
         width: 100%;
         gap: 2vw;
+        font-size: 3vw;
     }
+    #content1 a i{
+        font-size: 4.8vw;
+        padding: .3125rem;
+        color: #000;
+    }
+    #content2{
+        height: 5.6vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 5vw;
+        font-size: 3vw;
+    }
+    
     
     #navbar{
         height: 10vh;
@@ -43,8 +63,8 @@
     }
     .hamburger{
         position: absolute;
-        top: 10vh;
-        right: 1vw;
+        top: 11vh;
+        right: 1.5vw;
         display: block;
     }
     .hamburger img{

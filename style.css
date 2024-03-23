@@ -44,6 +44,7 @@
     --white: #FFF3F0;
     --black:black;
     --Feldgrau: #4C6663;
+    --Feldgrau22: #28e6e36f;
     --violet : #9046CF;
     --grey : #dadada;
     --grey_2:#3735352d;
@@ -79,9 +80,9 @@ html, body {
 }
 
 #content1{
+    background-color: var(--Feldgrau);
     height: 5.6vh;
     width: 100%;
-    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: start;
@@ -91,6 +92,8 @@ html, body {
 #content1 a , #content2 a{
     text-decoration: none;
     color: #000;
+    display: flex;
+    align-items: center;
 }
 
 #content1 a i{
@@ -100,9 +103,9 @@ html, body {
 }
 
 #content2{
+    background-color: var(--Feldgrau22);
     height: 5.6vh;
     width: 100%;
-    /* background-color: peru; */
     display: flex;
     align-items: center;
     justify-content: end;
@@ -131,7 +134,7 @@ html, body {
 }
 
 .nav-responsive{
-    width: 40%;
+    width: 60%;
     height: 100%;
     position: absolute;
     top: 0;
