@@ -1,0 +1,54 @@
+@media only screen and (max-width: 600px){
+    #main{
+        height: 100%;
+        width: 100%;
+        background-color: var(--white);
+        padding: 1.5vw;
+    }
+    
+    #top-sticky{
+        height: 8vh;
+        width: 100%;
+        justify-content: space-between;
+        font-size:1.9vw;
+        padding: 2vh;
+    }
+    
+    #content1{
+        height: 5.6vh;
+        width: 100%;
+        gap: 2vw;
+    }
+    
+    #navbar{
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        display: none;
+    }
+    
+    #navbar img{
+        height: 100%;
+        width: 20%;
+        max-width: 40%;
+        object-fit: contain;
+    }
+    
+    #nav-links a{
+        color: var(--Feldgrau);
+        text-decoration: none;
+        padding: 1.5vw;
+    }
+    .hamburger{
+        position: absolute;
+        top: 10vh;
+        right: 1vw;
+        display: block;
+    }
+    .hamburger img{
+        width: 6vw;
+    }
+
+}

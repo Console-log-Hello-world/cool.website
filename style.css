@@ -42,10 +42,11 @@
 /* CSS Variables */
 :root{
     --white: #FFF3F0;
+    --black:black;
     --Feldgrau: #4C6663;
     --violet : #9046CF;
     --grey : #dadada;
-
+    --grey_2:#3735352d;
 }
 /* General CSS Boilerplate */
 * {
@@ -65,15 +66,16 @@ html, body {
     height: 100%;
     width: 100%;
     background-color: var(--white);
-    padding: 1vw;
+    padding: 0.5vw;
 }
 
 #top-sticky{
     height: 5.6vh;
     width: 100%;
-    /* background-color: var(--violet); */
+    border-bottom: 2px solid var(--black);
     display: flex;
     align-items: center;
+    padding: 4vh;
 }
 
 #content1{
@@ -110,7 +112,6 @@ html, body {
 #navbar{
     height: 10vh;
     width: 100%;
-    /* background-color: yellowgreen; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -128,3 +129,38 @@ html, body {
     text-decoration: none;
     padding: 1.5vw;
 }
+
+.nav-responsive{
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #7ab7e63f;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 3vw;
+    display: none;
+    transition: all 1s ease-in-out;
+}
+.nav-responsive a{
+    text-decoration: none;
+    color: var(--Feldgrau);
+    border-bottom: 2px solid var(--black);
+}
+
+.nav-responsive #back-drop{
+    position: relative;
+}
+.hamburger{
+    position: absolute;
+    right: 0.3vw;
+    top: 9vh;
+    display: none;
+}
+.hamburger img{
+    width: 3vw;
+}
+
